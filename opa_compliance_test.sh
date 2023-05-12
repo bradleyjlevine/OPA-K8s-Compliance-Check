@@ -5,5 +5,5 @@ test1=$(kubectl get pods -A -o json | jq --arg labelk gatekeeper.sh/system '.ite
 if [[ "$test1" > "0" ]]; then
 	echo "Passed! OPA Gatekeeper Found and Running."
 else
-	echo "Failed! OPA Gatekeepr not Found Running."
+	echo "Failed! OPA Gatekeeper Not Found Running."
 fi
